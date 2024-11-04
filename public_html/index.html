@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang= "en" >
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <meta property="og:title" content="Jay's Portfolio">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https:/aboutjay.com">
+        <meta property="og:description" content="All about Jay Patel's work">
+        <meta property="og:image" content="Hotpot-2-removebg.png">
+        <title>Jays Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/51613813b4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="upscaleJP.png" id="logo" alt="JP Logo">
+            <ul id = "sidemenu">
+                <li><a href = "#header" >Home</a></li>
+                <li><a href = "#about" >About</a></li>
+                <li><a href = "#portfolio" >Portfolio</a></li>
+                <li><a href = "#other" >Other</a></li>
+                <li><a href = "#contact" >Contact</a></li>
+                <i class="fa-solid fa-xmark" id="xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" id="bars" onclick = "openmenu()"></i>
+        </nav>
+        <div class="header-content">
+            <div class="header-text">
+                <h2>Driven Problem Solver</h2>
+                <h3>Hello! I am Jay Patel and I am a professional in technology.</h3>
+            </div>
+            <img src= "Hotpot-2-removebg.png" class ="header-image" alt="main image brain explode">
+        </div>
+    </div>
+</div>
+
+<!-- about -->
+
+<div id="about">
+    <div class="containter">
+        <div class="row">
+            <div class="about-col1">
+                <img src="headshot_white.png" alt="head-shot">
+            </div>
+            <div class="about-col2">
+                <h1 class = "subtitle">About Me</h1>
+                <p class = "description">I’m always diving into tech, soaking up everything from full-stack development to machine learning, data science, and product.  Tech is my playground, and I’m stoked to keep making things smarter and better for everyone.</p>
+                <div class="tab-titles">
+                    <p class = "tab-links active-link" onclick="opentab('skills', event)"> Skills</p>
+                    <p class = "tab-links" onclick="opentab('experience',event)"> Experience</p>
+                    <p class = "tab-links" onclick="opentab('education',event)"> Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Full-Stack Experience in MERN, MEAN, Spring Boot</li>
+                        <li><span>Programming</span><br>Python, JavaScript, Java, TypeScript</li>
+                        <li><span>Product Development</span><br>Agile, Data Analytics, Product Delivery</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "experience">
+                    <ul>
+                        <li><span>July 2022 - Current</span><br>Software Engineer @ General Motors</li>
+                        <li><span>May 2023 - January 2024</span><br>Technical Product Owner @ General Motors</li>
+                        <li><span>June 2021 - August 2021</span><br>Data Analytics Intern @ Discover Financial Services</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "education">
+                    <ul>
+                        <li><span>January 2023 - August 2024</span><br> M.S. Computer Science @ Stevens Institute of Technology</li>
+                        <li><span>September 2018 - May 2022</span><br>B.S. Business Analytics and Information Technology (BAIT) @ Rutgers Business School</li>
+                        <li><span>September 2018 - May 2022</span><br>B.S. Finance @ Rutgers Business School</li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- porfolio -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="section-title">My Work</h1>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                    <img src="male-web-dev.jpeg" alt="Project 1 Icon" class="portfolio-icon">
+                    <div class="layer">
+                        <h3>AI Chatbot</h3>
+                        <p>This is a project that allows users to chat with an AI Bot. Using OpenAI's API, I created a full-stack web application that allows users to securely create or login to an account, chat with AI, save conversations, delete conversations, etc. This application is completely secure using JWT tokens, HTTP-only cookies, password encryption, and middleware chains. For this application, I used the MERN stack, using MongoDB for the backend and Node.js for runtime environment. I used Express.js to handle routing and middlewares, and the front-end was handled with React.js. Check it out!</p>
+                        <a href = "https://github.com/jp1648/Jay-GPT" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div> 
+            </div>
+            <div class="portfolio-item">
+                    <img src="folder-icon.png" alt="Project 2 Icon" class="portfolio-icon">
+                    <div class = "layer">
+                        <h3>Github Link</h3>
+                        <p>Links to other projects as I continue to create 👾</p>
+                        <a href = "https://github.com/jp1648" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- other -->
+
+<div id="other">
+    <div class="containter">
+        <div class="row">
+            <div class="other-col1">
+                <img src="melo.jpeg" alt="dog melo">
+            </div>
+            <div class="other-col2">
+                <h1 class = "subtitle">Other</h1>
+                <p class = "description">While this website is primarily focused on my professional development, I figured I would add a section for something more personal. I am originally from New Jersey, where I grew up my entire life. From the amazing food, especially the pizza, to the exciting beaches, growing up in New Jersey was great. Although, after graduating from my undergrad program, I thought it would be exciting to move somewhere new, and this led me to move to Austin, Texas. I never thought I would end up living in Texas, but I learned to love this state, and city, just as much as I love home. Some of my favorite things to do in Austin are eat Tex-Mex, roam around downtown, and take in the nice, hot weather. Some of my hobbies include weightlifting, playing with my dog, watching TV, and supporting my favorite New York sports teams (especially the <span id="colorized-word">Knicks</span>). I guess you could call me a die-hard fan since my dog, Melo, is named after Carmelo Anthony, my favorite Knick of all time. To leave off, I have attached a picture of my good friend Melo alongside this section. Thanks so much for visiting my website!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- contact -->
+
+<div id="contact">
+    <div class="containter">
+        <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <div class="socials">
+                        <p class="email-trigger" id = "copy-email"><i class="fa-solid fa-envelope"></i></p>
+                        <div class = "email-bubble">
+                            <span id = "email-address">jaypat0885@gmail.com</span>
+                        </div>
+                        <a href="https://www.linkedin.com/in/jp910/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type = "text" name = "Name" placeholder= "Your Name" required>
+                        <input type = "email" name = "Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type = "submit" class = "but">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright © Jay Patel </p>
+    </div>
+</div>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxZZD3pR80ukP9Jzzy2t-9scbieo_NLgnbduTDejZWCxIc4OxJchtBsWmG0IVv2QFfmnQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
+
